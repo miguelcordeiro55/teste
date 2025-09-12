@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafhort</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página com fundo degradê */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #005c99, #00aaff); /* Degradê de azul escuro para azul claro */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Container centralizado */
+        .container {
+            text-align: center;
+        }
+
+        /* Estilo do texto */
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            color: white;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Animação de pulsação */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Adicionando um efeito sutil ao background */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kafhort</h1>
+    </div>
+
+</body>
+</html>
